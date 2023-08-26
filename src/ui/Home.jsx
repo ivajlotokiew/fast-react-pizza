@@ -4,7 +4,6 @@ import CreateUser from '../features/user/CreateUser';
 import Button from './Button';
 
 const Home = () => {
-  debugger;
   const username = useSelector((state) => state.user.username);
 
   return (
