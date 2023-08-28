@@ -10,7 +10,6 @@ function MenuItem({ pizza }) {
   const dispatch = useDispatch();
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
   const currentQuantity = useSelector(getCurrentQuantityById(id));
-  console.log('Cur quantity is: ', currentQuantity);
   const isInCart = currentQuantity > 0;
 
   const handleAddToCart = () => {
